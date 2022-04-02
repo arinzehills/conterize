@@ -1,0 +1,61 @@
+.myprogress_circle {
+  width: 120px;
+  height: 120px;
+  /* background: var(--red_transparent); */
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.outer {
+  /* background-color: var(--red); */
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  /* background-color: rebeccapurple; */
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: inset 8px 8px 6px #cbced1,
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    inset -4px -4px 6px rgba(255, 255, 255, 0.7),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: var(--dark-blue); */
+  color: #e91e63;
+}
+#number {
+  font-weight: 600;
+}
+.inner:nth-child(2) {
+  color: var(--red);
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+
+  /* stroke: linear-gradient(var(--light-orange), var(--dark-orange)); */
+  stroke-width: 10px;
+  stroke-dasharray: 248;
+  stroke-dashoffset: 248;
+  animation: anim 2s linear forwards;
+}
+svg {
+  position: absolute;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 173.6;
+  }
+}
