@@ -4,6 +4,11 @@
   justify-content: center;
   align-items: center;
 }
+@supports (-moz-appearance: none) {
+  .pricing_container {
+    background-color: white;
+  }
+}
 .pricing_container {
   padding: 2rem 2rem 2rem;
   margin-bottom: 3em;
@@ -13,7 +18,9 @@
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.1)
   );
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
+  /* filter: ; */
   flex-direction: column;
   width: 80%;
   border-top: var(--red) solid 10px;

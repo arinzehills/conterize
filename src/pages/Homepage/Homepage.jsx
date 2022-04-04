@@ -4,6 +4,10 @@ import Pricing from "../../components/Pricing/Pricing";
 import GuaranteHero from "../../components/GuaranteHero/GuaranteHero";
 import Hero from "../../components/Hero/Hero";
 import FAQs from "../../components/FAQs/FAQs";
+import Pricingcontact from "../Pricing/Pricingcontact";
+import FooterSvg from "../../components/FooterSvg/FooterSvg";
+import Footer from "../../components/Footer/Footer";
+import Login from "../Login/Login";
 
 function Homepage() {
   const [count, setCount] = useState(0);
@@ -63,12 +67,20 @@ function Homepage() {
       stopColor2: "var(--dark-blue)",
     },
   ];
+  const desArr = [
+    "• 100 percent unique Content",
+    "•	Only top 5%  content creators are accepted",
+    "•	Unlimited Revisions till you are satisfied",
+    "•	Customizable Monthly Plans at your Request",
+    "•	Change Monthly Subscription or Cancel Anytime",
+    "•	100% money back Guarantee. No long story",
+  ];
   return (
     <div className="Homepage">
       <Hero {...homeData} />
       <Hero {...homeData2} />
       <Pricing data={data} height="400px" />
-      <GuaranteHero />
+      <GuaranteHero descArr={desArr} />
       <Hero
         isCenter={true}
         subHeadline=""
@@ -78,6 +90,7 @@ function Homepage() {
         buttonLabel={["GET STARTED", "SPEAK TO US"]}
       />
       <FAQs />
+      {/* <Footer /> */}
     </div>
   );
 }

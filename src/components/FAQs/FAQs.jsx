@@ -3,10 +3,23 @@ import "./Faqs.css";
 import { MdArrowForwardIos } from "react-icons/md";
 import { BsRecordCircle } from "react-icons/bs";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import { useState } from "react";
-
+import { useState, useRef } from "react";
+import Pricingcontact from "../../pages/Pricing/Pricingcontact";
+const data1 = [
+  {
+    id: 1,
+    heading: "How does it work?",
+    desc: [
+      "After signing up, you will see different monthly plans to choose from on your dashboard. ",
+      "Pick a plan and submit a content request from your dashboard. Specify requirements, word counts and content type, etc. " +
+        "Our algorithm finds the best content creators for your requirements and the content is delivered to you on your dashboard where you can accept or request a revision.  ",
+      "You can also Invite any member of your team to make a content request or handle content requests for you.      ",
+    ],
+  },
+];
 const data = [
   {
+    id: 1,
     heading: "How does it work?",
     desc: [
       "After signing up, you will see different monthly plans to choose from on your dashboard. ",
@@ -16,6 +29,7 @@ const data = [
     ],
   },
   {
+    id: 2,
     heading: "How many pieces of content can I request per month? ",
     desc: [
       "Each plan comes with a variety of content options.",
@@ -24,12 +38,14 @@ const data = [
     ],
   },
   {
+    id: 3,
     heading: "What if I don’t like my content?",
     desc: [
       "We offer unlimited revisions for all content created as part of your monthly subscription plan. We also offer a 100% money-back guarantee. ",
     ],
   },
   {
+    id: 4,
     heading: "Can I cancel anytime?",
     desc: [
       "Yes, you can cancel the monthly" +
@@ -38,37 +54,69 @@ const data = [
     ],
   },
 ];
+
 function FAQs() {
-  const [click, setClick] = useState(false);
-  const onClick = () => setClick(!click);
+  // const [click, setClick] = useState(false);
+  const [click, setClick] = useState({});
+  // const onClick = () => setClick(!click);
+  const [setHeight, setHeightState] = useState("0px");
+  const handleClick = (index) => () => {
+    setClick((state) => ({
+      ...state, // <-- copy previous state
+      [index]: !state[index], // <-- update value by index key
+    }));
+  };
+  const content = useRef(null);
+  function toggleAccordion() {
+    // onClick();
+    setHeightState();
+    // click === true ? "0px" : `${content.current.scrollHeight}px`
+    // console.log(content.current.scrollHeight);
+  }
   return (
     <>
       <div className="faq_section">
         <div className="faq_wrapper">
           <h1>Frequently Asked Questions</h1>
-          {data.map((item) => (
-            <div className="faq_container" onClick={onClick} key={item.heading}>
+          {data.map((item, index) => (
+            <div
+              className={
+                click[index] ? "faq_container active" : "faq_container  "
+              }
+              onClick={handleClick(index)}
+              key={item.id}
+              // style={{ height: click ? "300px" : "100px" }}
+            >
               <div className="faq_row">
                 <h2>{item.heading}</h2>
                 <div className="icon_wrapper">
-                  {click ? (
-                    <MdArrowForwardIos
-                      className="faq_icon"
-                      key={item.heading}
-                    />
-                  ) : (
-                    <IoIosArrowDropdownCircle
-                      style={{ fontSize: "2em" }}
-                      className="faq_icon"
-                      key={item.heading}
-                    />
-                  )}
+                  {/* {click ? ( */}
+
+                  <IoIosArrowDropdownCircle
+                    style={{
+                      fontSize: "2em",
+                      opacity: click[index] ? "1" : "0",
+                    }}
+                    className={click[index] ? "faq_icon " : "faq_icon active2"}
+                    // key={item.heading}
+                  />
+                  {/* ) : ( */}
+                  <MdArrowForwardIos
+                    className={click[index] ? "faq_icon active" : "faq_icon"}
+                    // key={item.heading}
+                  />
+                  {/* )} */}
                 </div>
               </div>
               {/* <div className="faq_body"></div> */}
-              {click &&
+              {click[index] &&
                 item.desc.map((des) => (
-                  <div className="guarantee_row">
+                  <div
+                    // ref={content}
+                    // style={{ maxHeight: `${setHeight}` }}
+                    className="accordian_content"
+                    key={des}
+                  >
                     <BsRecordCircle
                       className="g_icon"
                       style={{ color: "var(--red)" }}
@@ -78,6 +126,7 @@ function FAQs() {
                 ))}
             </div>
           ))}
+          <Pricingcontact heading="Ready to take your startup content game to the next level?" />
         </div>
       </div>
     </>

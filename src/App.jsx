@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "./logo.svg";
 import { Routes as Switch, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,6 +9,8 @@ import GuaranteHero from "./components/GuaranteHero/GuaranteHero";
 import HomepageWrapper from "./pages/Homepage_wrapper/Homepage_wrapper";
 import Homepage from "./pages/Homepage/Homepage";
 import Pricingpage from "./pages/Pricing/Pricingpage";
+import ContentTypes from "./pages/ContentTypes/ContentTypes";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
@@ -19,11 +20,9 @@ function App() {
         <Route path="/" exact element={<HomepageWrapper />}>
           <Route index element={<Homepage />} />
           <Route path="/pricing" exact element={<Pricingpage />} />
-          {/* <Route path='/about' exact element={<About/>}/> */}
-          {/* <Route path='/login' 
-              
-              exact element={<Login />}/> */}
+          <Route path="/contenttypes" exact element={<ContentTypes />} />
         </Route>
+        <Route path="/login" exact element={<Login />} />
       </Switch>
     </div>
   );

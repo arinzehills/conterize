@@ -1,124 +1,118 @@
 .btn {
-    padding: 8px 20px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    white-space: nowrap; 
-    margin-top: 1em;
-    margin-right: 1rem;
-    font-weight:800; 
-    height: 50px;
-    width: 170px;
-  }
-  .btn--normal {
-    background-color: var(--grey);
-    color: #242424;
-    border: 1px solid var(--grey);
-  }
-  
+  padding: 8px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-top: 1em;
+  margin-right: 1rem;
+  font-weight: 800;
+  height: 50px;
+  width: 170px;
+}
+.btn--normal {
+  background-color: var(--grey);
+  color: #242424;
+  border: 1px solid var(--grey);
+}
 
-  .btn--outline {
-    background-color:transparent;
-    padding: 8px 20px;
-    border: 1px solid var(--red);
-    color:var(--red);
-    transition: all 0.3s ease-out;
+.btn--outline {
+  background-color: transparent;
+  padding: 8px 20px;
+  border: 1px solid var(--red);
+  color: var(--red);
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 16px;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+.btn--mobile {
+  text-align: center;
+  border-radius: 4px;
+  width: 80%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  padding: 14px 20px;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-out;
+}
+
+.btn--wide {
+  padding: 12px 64px;
+  font-size: 20px;
+}
+
+.btn--large:hover,
+.btn--medium:hover,
+.btn--mobile:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: var(--red);
+}
+
+.btn--wide:hover {
+  color: #fff;
+  background-color: #f00946;
+  transition: all 0.2s ease-out;
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height: 100%;
+  width: 100%;
+}
+
+.red {
+  background: var(--red);
+  box-shadow: 0 10px 60px 2px rgba(243, 61, 25, 0.65);
+  padding: 8px 20px;
+  color: #fff;
+}
+.red:hover {
+  background-color: white;
+  border: 1px solid var(--red);
+  transition: all 0.3s ease-out;
+  color: var(--red);
+}
+
+@media screen and (max-width: 960px) {
+  .btn {
+    width: 65%;
+    margin-bottom: 35px;
+    /* height: 60px; */
   }
-  
-  .btn--medium {
-    padding: 8px 20px;
-    font-size: 18px;
-    font-family: 'Rubik', sans-serif;
-    
-  }
-  
   .btn--large {
-    padding: 12px 26px;
-    font-size: 16px;
-    height: 65px;
-    box-sizing: border-box;
+    width: 500px;
   }
-  
-  .btn--mobile {
-    text-align: center;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
+  .airtime-header {
+    padding-top: 1em;
   }
-  
-  .btn--wide {
-    padding: 12px 64px;
-    font-size: 20px;
-  }
-  
-  .btn--large:hover,
-  .btn--medium:hover,
-  .btn--mobile:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    color: #242424;
-  }
-  
-  .btn--wide:hover {
-    color: #fff;
-    background-color: #f00946;
-    transition: all 0.2s ease-out;
-  }
-  
-  .btn-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 8px 16px;
-    height: 100%;
-    width: 100%;
-  }
+}
 
-  
-   
-  .red {
-    background:var(--red);
-    box-shadow: 0 10px 60px 2px rgba(243, 61, 25, 0.65);
-    padding: 8px 20px;
-    color: #fff;
-  }
-  .red:hover {
-    background-color: white;
-    border: 1px solid var(--red);
-    transition: all 0.3s ease-out;
-    color: var(--red);
-  }
-  
-  @media screen and (max-width: 960px) {
-    .btn{
-      width: 65%;
-      margin-bottom: 35px;
-      /* height: 60px; */
-     
-    }
-    .btn--large{
-      width: 500px;
-    }
-    .airtime-header{
-      padding-top: 1em;
-    }
-  }
-  
-  
-  @media screen and (min-width: 961px){
-    .btn {  
+@media screen and (min-width: 961px) {
+  .btn {
     /* width: 210px; */
     /* height: 70px; */
   }
-  .btn--large{
+  .btn--large {
     /* width: 500px; */
   }
-  }
+}

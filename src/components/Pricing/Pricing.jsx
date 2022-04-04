@@ -22,7 +22,7 @@ function Pricing({ headline, data, isPricing, height }) {
           <h2 className="pricing-header">{headline ?? "How it Works?"}</h2>
           <div className="pricing-card-container">
             {data.map((item) => (
-              <div className="pricing_card_wrapper" key={item}>
+              <div className="pricing_card_wrapper" key={item.key}>
                 <div
                   className="pricing-card"
                   key={item.heading}
