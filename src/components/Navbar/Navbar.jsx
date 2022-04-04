@@ -126,7 +126,7 @@ const Navbar = () => {
 
           <li className="nav-btn" onClick={closeMobileMenu}>
             {button ? (
-              <Link to="/login">
+              <Link to="/register">
                 <Button buttonStyle="btn--outline" buttonSize="btn--wide">
                   Sign up{" "}
                 </Button>

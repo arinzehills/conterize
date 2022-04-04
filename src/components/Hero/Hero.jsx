@@ -52,7 +52,12 @@ function Hero({
             <div className="hero__headline">
               <h1>{headline}</h1>
             </div>
-            <p className="hero__subtitle">{description}</p>
+            <p
+              className="hero__subtitle"
+              // dangerouslySetInnerHTML={{ __html: description }}
+            >
+              {description}
+            </p>
             {showButton === true && (
               <Link to="/register">
                 <Button buttonColor="red" buttonSize="btn--large">

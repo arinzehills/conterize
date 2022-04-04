@@ -48,3 +48,18 @@
   max-width: 80rem;
   max-height: 22rem;
 }
+@media screen and (max-width: 960px) {
+  .pricing_container {
+    width: 100%;
+    padding: 0;
+  }
+  .pricing_row {
+    flex-direction: column;
+    display: flex;
+  }
+  .cnt_img {
+    max-width: 27rem;
+    margin-top: 6rem;
+    transform: rotate(90deg);
+  }
+}
