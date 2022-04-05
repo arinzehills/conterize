@@ -12,7 +12,7 @@
 .pricing_container {
   padding: 2rem 2rem 2rem;
   margin-bottom: 3em;
-  z-index: 999;
+  z-index: 99;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.1),
