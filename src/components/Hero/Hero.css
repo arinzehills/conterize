@@ -75,13 +75,16 @@
     font-size: 20px;
   }
   .hero__column {
-    width: 85%;
+    width: 88%;
   }
   .hero__row {
     display: flex;
     flex-direction: column;
     margin-left: 0rem;
-    width: 110%;
+    width: 120%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .hero__subtitle {
     width: 100%;
