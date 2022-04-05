@@ -16,18 +16,24 @@ function Pricingcontact({ heading }) {
           <div className="pricing_row">
             <img src="./images/studio3.svg" />
             <div className="prx_cnt_col">
-              <h2 style={{ color: "var(--dark-blue)", paddingBottom: "2rem" }}>
+              <h2
+                style={{
+                  color: "var(--dark-blue)",
+                  paddingBottom: "2rem",
+                }}
+              >
                 {heading ?? "Need a Custom Plan?"}
               </h2>
-              <div className="prx_ctn_btn_wrp"></div>
-              <Button buttonSize="btn--large" buttonColor="red">
-                Speak to us
-              </Button>
-              {heading != null && (
-                <Button buttonSize="btn--large" buttonStyle="btn--outline">
+              <div className="prx_ctn_btn_wrp">
+                <Button buttonSize="btn--large" buttonColor="red">
                   Speak to us
                 </Button>
-              )}
+                {heading != null && (
+                  <Button buttonSize="btn--wide" buttonStyle="btn--outline">
+                    Speak to us
+                  </Button>
+                )}
+              </div>
             </div>
           </div>
         </div>
