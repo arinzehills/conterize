@@ -98,51 +98,72 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            {!button && (
+              <div>
+                <li className="nav-btn" onClick={closeMobileMenu}>
+                  <Link to="/login">
+                    <Button buttonStyle="btn--outline" buttonSize="btn--large">
+                      Sign In
+                    </Button>
+                  </Link>
+                </li>
+
+                <li className="nav-btn" onClick={closeMobileMenu}>
+                  <Link to="/register">
+                    <Button buttonColor="pink" buttonSize="btn--large">
+                      Register
+                    </Button>
+                  </Link>
+                </li>
+              </div>
+            )}
           </ul>
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-btn" onClick={closeMobileMenu}>
-            {button ? (
-              <Link to="/login">
-                <Button
-                  buttonColor="red"
-                  buttonStyle="btn--normal"
-                  buttonSize="btn--wide"
-                >
-                  Login{" "}
-                </Button>
-              </Link>
-            ) : (
-              <Link to="/login">
-                <Button
-                  buttonColor="pink"
-                  //   buttonSize='btn--wide'
-                >
-                  Sign In
-                </Button>
-              </Link>
-            )}
-          </li>
+        {button && (
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-btn" onClick={closeMobileMenu}>
+              {button ? (
+                <Link to="/login">
+                  <Button
+                    buttonColor="red"
+                    buttonStyle="btn--normal"
+                    buttonSize="btn--wide"
+                  >
+                    Login{" "}
+                  </Button>
+                </Link>
+              ) : (
+                <Link to="/login">
+                  <Button
+                    buttonColor="pink"
+                    //   buttonSize='btn--wide'
+                  >
+                    Sign In
+                  </Button>
+                </Link>
+              )}
+            </li>
 
-          <li className="nav-btn" onClick={closeMobileMenu}>
-            {button ? (
-              <Link to="/register">
-                <Button buttonStyle="btn--outline" buttonSize="btn--wide">
-                  Sign up{" "}
-                </Button>
-              </Link>
-            ) : (
-              <Link to="/login">
-                <Button
-                  buttonColor="pink"
-                  //   buttonSize='btn--wide'
-                >
-                  Sign In
-                </Button>
-              </Link>
-            )}
-          </li>
-        </ul>
+            <li className="nav-btn" onClick={closeMobileMenu}>
+              {button ? (
+                <Link to="/register">
+                  <Button buttonStyle="btn--outline" buttonSize="btn--wide">
+                    Sign up{" "}
+                  </Button>
+                </Link>
+              ) : (
+                <Link to="/login">
+                  <Button
+                    buttonColor="pink"
+                    //   buttonSize='btn--wide'
+                  >
+                    Sign In
+                  </Button>
+                </Link>
+              )}
+            </li>
+          </ul>
+        )}
       </div>
     </>
   );
