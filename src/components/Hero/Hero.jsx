@@ -30,19 +30,16 @@ function Hero({
                      isCenter === true
                        ? "hero__column"
                        : imgStart === "start"
-                       ? "hero__row"
-                       : "hero__row"
+                       ? window.innerWidth <= 960
+                         ? "hero__column"
+                         : "hero__row " //for start
+                       : "hero__row reverse" //if is not for start
                    }
             `}
-          style={{
-            display: "flex",
-            flexDirection:
-              isCenter === true
-                ? "column"
-                : imgStart === "start"
-                ? "row-reverse"
-                : "row",
-          }}
+          // style={{
+          //   display: "flex",
+          //   flexDirection: imgStart === "start" ? "row-reverse" : "row",
+          // }}
         >
           <div
             className="hero__text_wrapper "

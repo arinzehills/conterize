@@ -46,9 +46,15 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .hero__row {
   width: 100%;
+  flex-direction: row;
+}
+.hero__row.reverse {
+  flex-direction: row-reverse;
 }
 .hero__image {
   /* max-width: 555px; */
@@ -106,10 +112,7 @@
     padding-bottom: 1em;
     padding-top: 1em;
   }
-  .hero__row {
-    display: none;
-    flex-direction: column;
-  }
+
   .container {
     /* margin: -10px; */
   }

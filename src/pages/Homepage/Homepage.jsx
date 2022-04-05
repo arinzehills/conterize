@@ -22,7 +22,7 @@ function Homepage() {
     show2Button: false,
     buttonLabel: ["Sign up"],
     img: "../../images/studio.png",
-    imgStart: "start",
+    // imgStart: "start",
     isCenter: true,
     showImg: true,
     smallImage: "images/twocircle.png",
@@ -32,7 +32,7 @@ function Homepage() {
     description:
       "Too long a time. Let Conterize take your startup content game to the next level! " +
       "Get the right content your business needs to drive traffic, build trust, grow and scale.",
-    imgStart: "",
+    imgStart: "start",
     img: "../../images/studio2.svg",
     showImg: true,
   };
