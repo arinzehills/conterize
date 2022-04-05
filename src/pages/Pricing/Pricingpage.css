@@ -59,7 +59,7 @@
   }
   .cnt_img {
     max-width: 27rem;
-    margin-top: 6rem;
+    margin-top: 0;
     transform: rotate(90deg);
   }
 }

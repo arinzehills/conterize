@@ -112,7 +112,10 @@
   }
   .faq_container {
     width: 100%;
-    /* max-width: 100%; */
+    max-height: 150px;
+  }
+  .faq_container.active {
+    max-height: 650px;
   }
 }
 /* @-moz-keyframes spin {
