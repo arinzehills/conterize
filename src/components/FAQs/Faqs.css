@@ -115,7 +115,7 @@
     max-height: 150px;
   }
   .faq_container.active {
-    max-height: 650px;
+    max-height: 750px;
   }
 }
 /* @-moz-keyframes spin {
