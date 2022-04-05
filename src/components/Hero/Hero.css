@@ -71,4 +71,18 @@
   /* padding-right: 0; */
 }
 @media screen and (max-width: 768px) {
+  .hero__headline {
+    font-size: 20px;
+  }
+  .hero__column {
+    width: 100%;
+  }
+  .hero__row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+  }
+  .hero__subtitle {
+    width: 100%;
+  }
 }
