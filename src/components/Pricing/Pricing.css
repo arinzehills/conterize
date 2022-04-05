@@ -55,12 +55,6 @@
 .pricing-card:hover {
   /* transform: scale(1.06); */
   transition: all 0.3s ease-out;
-  /* color: #1c2237; */
-  /* box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
-                10px 10px 15px rgba(70, 70, 70, 0.12) ,
-                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-                inset 10px 10px 15px rgba(70, 70, 70, 0.12)
-                 ; */
   box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12), inset 13px 13px 15px #cbced1,
     -13px -13px 15px #ffffff, inset 13px 13px 15px #cbced1,
@@ -114,7 +108,7 @@
     font-size: 20px;
   }
   .pricing-card {
-    width: 70%;
+    width: 80%;
     margin-bottom: 10%;
   }
 }
