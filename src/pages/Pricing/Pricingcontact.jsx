@@ -29,7 +29,7 @@ function Pricingcontact({ heading }) {
                   Speak to us
                 </Button>
                 {heading != null && (
-                  <Button buttonSize="btn--wide" buttonStyle="btn--outline">
+                  <Button buttonSize="btn--large" buttonStyle="btn--outline">
                     Speak to us
                   </Button>
                 )}
