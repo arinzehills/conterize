@@ -50,7 +50,7 @@
 }
 @media screen and (max-width: 960px) {
   .pricing_container {
-    width: 95%;
+    width: 105%;
     padding: 0;
   }
   .pricing_row {
