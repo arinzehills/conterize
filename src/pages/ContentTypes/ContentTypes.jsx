@@ -29,6 +29,7 @@ const blogData = {
   showImg: true,
   showButton: true,
   buttonLabel: ["Get Started"],
+  isCenter: window.innerWidth <= 960 && true,
 };
 const pageCopyData = {
   headline: "Landing Page Copy",
@@ -41,6 +42,7 @@ const pageCopyData = {
   img: "../../images/studio.png",
   showImg: true,
   showButton: true,
+  isCenter: window.innerWidth <= 960 && true,
   buttonLabel: ["Get Started"],
 };
 const emailCopiesData = {
@@ -56,6 +58,7 @@ const emailCopiesData = {
   img: "../../images/studio.png",
   showImg: true,
   showButton: true,
+  isCenter: window.innerWidth <= 960 && true,
   buttonLabel: ["Get Started"],
 };
 const ebooksData = {
@@ -68,6 +71,7 @@ const ebooksData = {
   img: "../../images/studio2.svg",
   showImg: true,
   showButton: true,
+  isCenter: window.innerWidth <= 960 && true,
   buttonLabel: ["Get Started"],
 };
 const socailMediaData = {
@@ -80,6 +84,7 @@ const socailMediaData = {
   img: "../../images/studio2.svg",
   showImg: true,
   showButton: true,
+  isCenter: window.innerWidth <= 960 && true,
   buttonLabel: ["Get Started"],
 };
 const promoData = {
@@ -94,6 +99,7 @@ const promoData = {
   img: "../../images/hunt.svg",
   showImg: true,
   showButton: true,
+  isCenter: window.innerWidth <= 960 && true,
   buttonLabel: ["Get Started"],
 };
 const desArr = [
