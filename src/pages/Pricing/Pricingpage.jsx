@@ -61,7 +61,12 @@ function Pricingpage() {
         showImg={false}
         headline="Flexible content automation pricing for Startups!"
       />
-      <Pricing headline="Pricing" data={data} isPricing={true} height="600px" />
+      <Pricing
+        headline="Pricing"
+        data={data}
+        isPricing={true}
+        height={window.innerWidth <= 960 ? "auto" : "630px"}
+      />
       <Pricingcontact />
     </>
   );
