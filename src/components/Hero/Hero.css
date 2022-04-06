@@ -25,7 +25,7 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 4px rgb(222 42 74 / 5%);
-  font-size: 48px;
+  font-size: 43px;
   font-family: "Plus Jakarta Display", sans-serif;
 }
 .hero__subtitle {
@@ -80,10 +80,11 @@
 }
 @media screen and (min-width: 499px) and (max-width: 768px) {
   .hero__headline h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
   .hero__column {
-    width: 90%;
+    width: 100%;
+    padding: 0;
   }
   .hero__row {
     display: flex;
@@ -95,6 +96,6 @@
     text-align: center;
   }
   .hero__subtitle {
-    width: 100%;
+    width: auto;
   }
 }

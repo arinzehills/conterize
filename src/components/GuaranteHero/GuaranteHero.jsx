@@ -8,7 +8,16 @@ function GuaranteHero({ headline, descArr }) {
     <>
       <div className="guarantee_section">
         <div className="guarantee_container">
-          <h1 style={{ textAlign: "center" }}>{headline ?? header}</h1>
+          <h2
+            className=""
+            style={{
+              textAlign: "center",
+              padding: 0,
+              color: "var(--dark-blue)",
+            }}
+          >
+            {headline ?? header}
+          </h2>
           <hr></hr>
           <div className="guarantee_column">
             {descArr.map((item) => (
