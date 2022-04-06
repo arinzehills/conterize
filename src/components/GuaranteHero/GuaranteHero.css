@@ -48,3 +48,15 @@ hr {
 .g_icon {
   font-size: 25px;
 }
+@media screen and (max-width: 960px) {
+  .guarantee_container {
+    width: 90%;
+    /* padding: 0; */
+    border: 0.5px solid #e7e8f1;
+    border-radius: 36px;
+    box-shadow: 0 0 6px 0 rgb(78 42 222 / 2%), 0 6px 18px 0 rgb(78 42 222 / 2%);
+  }
+  .guarantee_container:hover {
+    border: 0.5px solid var(--red);
+  }
+}
