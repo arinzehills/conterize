@@ -3,6 +3,7 @@ import { HiOutlineBadgeCheck } from "react-icons/hi";
 import { Button } from "../../components/Button/Button";
 import "./Pricingpage.css";
 
+//this is the component with glash background
 function Pricingcontact({ heading }) {
   const header = "Conterize Guaranteed Quality Assurance";
 

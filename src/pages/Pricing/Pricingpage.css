@@ -12,6 +12,7 @@
 .pricing_container {
   padding: 2rem 2rem 2rem;
   margin-bottom: 3em;
+  margin-top: 3em;
   z-index: 99;
   background: linear-gradient(
     to right bottom,
@@ -52,6 +53,7 @@
   .pricing_container {
     width: 100%;
     padding: 0;
+    padding-top: 3rem;
     background: white;
     border: 0.5px solid #e7e8f1;
     border-radius: 36px;
@@ -59,6 +61,9 @@
   }
   .pricing_container:hover {
     border: 0.5px solid var(--red);
+  }
+  .pricing_container hr {
+    display: none;
   }
   .pricing_row {
     flex-direction: column-reverse;
