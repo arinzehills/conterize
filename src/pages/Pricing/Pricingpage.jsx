@@ -62,7 +62,7 @@ function Pricingpage() {
         headline="Flexible content automation pricing for Startups!"
       />
       <Pricing
-        headline="Pricing"
+        headline={"Pricing"}
         data={data}
         isPricing={true}
         height={window.innerWidth <= 960 ? "auto" : "630px"}
