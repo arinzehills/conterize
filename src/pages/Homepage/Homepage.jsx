@@ -34,6 +34,7 @@ function Homepage() {
       "Get the right content your business needs to drive traffic, build trust, grow and scale.",
     imgStart: "start",
     img: "../../images/studio2.svg",
+    isCenter: window.innerWidth <= 960 && true,
     showImg: true,
   };
   const data = [
