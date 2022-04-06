@@ -20,7 +20,8 @@ function Pricing({ headline, data, isPricing, height }) {
       <div className="pricing-container">
         <div className="pricing-wrapper">
           <h2 className="pricing-header">
-            {window.innerWidth <= 960 ? "" : headline ?? "How it Works?"}
+            {headline ?? "How it Works?"}
+            {/* {window.innerWidth <= 960 ? "" : headline ?? "How it Works?"} */}
           </h2>
           <div className="pricing-card-container">
             {data.map((item) => (
