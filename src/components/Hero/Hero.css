@@ -20,21 +20,23 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 800;
 }
-.hero__headline {
+.hero__headline h1 {
   color: var(--dark-blue);
   font-weight: 700;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 4px rgb(222 42 74 / 5%);
-  font-size: 26px;
+  font-size: 48px;
+  font-family: "Plus Jakarta Display", sans-serif;
 }
 .hero__subtitle {
   font-family: "Plus Jakarta Display", sans-serif;
-  font-weight: 550;
+  font-weight: 500;
   width: 70%;
   line-height: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #62668a;
+  font-size: 16px;
 }
 .hero__container {
   display: flex;
@@ -70,9 +72,15 @@
   /* width: 700px; */
   /* padding-right: 0; */
 }
-@media screen and (max-width: 768px) {
-  .hero__headline {
-    font-size: 20px;
+
+@media screen and (max-width: 498px) {
+  .hero__headline h1 {
+    font-size: 33px;
+  }
+}
+@media screen and (min-width: 499px) and (max-width: 768px) {
+  .hero__headline h1 {
+    font-size: 40px;
   }
   .hero__column {
     width: 90%;

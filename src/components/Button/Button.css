@@ -82,7 +82,7 @@
 
 .red {
   background: var(--red);
-  box-shadow: 0 10px 60px 2px rgba(243, 61, 25, 0.65);
+  /* box-shadow: 0 10px 60px 2px rgba(243, 61, 25, 0.65); */
   padding: 8px 20px;
   color: #fff;
 }

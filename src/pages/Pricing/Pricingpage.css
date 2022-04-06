@@ -52,9 +52,16 @@
   .pricing_container {
     width: 105%;
     padding: 0;
+    background: white;
+    border: 0.5px solid #e7e8f1;
+    border-radius: 36px;
+    box-shadow: 0 0 6px 0 rgb(78 42 222 / 2%), 0 6px 18px 0 rgb(78 42 222 / 2%);
+  }
+  .pricing_container:hover {
+    border: 0.5px solid var(--red);
   }
   .pricing_row {
-    flex-direction: column;
+    flex-direction: column-reverse;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -62,6 +69,11 @@
   .prx_cnt_col {
     padding-left: 3.5rem;
     justify-content: center;
+  }
+  .prx_cnt_col h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0;
   }
   .cnt_img {
     max-width: 27rem;

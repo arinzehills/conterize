@@ -45,7 +45,7 @@ function Hero({
             className="hero__text_wrapper "
             style={{ alignItems: isCenter === true && "center" }}
           >
-            <div className="sub_headline">{subHeadline ?? "Conterize"}</div>
+            <div className="sub_headline">{subHeadline}</div>
             <div className="hero__headline">
               <h1>{headline}</h1>
             </div>

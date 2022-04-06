@@ -77,7 +77,7 @@ function FAQs() {
     <>
       <div className="faq_section">
         <div className="faq_wrapper">
-          <h1>Frequently Asked Questions</h1>
+          <h2>Frequently Asked Questions</h2>
           {data.map((item, index) => (
             <div
               className={
@@ -88,7 +88,7 @@ function FAQs() {
               // style={{ height: click ? "300px" : "100px" }}
             >
               <div className="faq_row">
-                <h2>{item.heading}</h2>
+                <h3>{item.heading}</h3>
                 <div className="icon_wrapper">
                   {/* {click ? ( */}
 
