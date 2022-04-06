@@ -79,10 +79,11 @@
     font-size: 33px;
   }
   .hero__column {
+    width: 100%;
+  }
+  .hero__subtitle {
     width: 90%;
   }
-.hero__subtitle {
-  width: 90%;
 }
 @media screen and (min-width: 499px) and (max-width: 768px) {
   .hero__headline h1 {
