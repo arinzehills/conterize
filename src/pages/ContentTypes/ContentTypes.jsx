@@ -108,35 +108,33 @@ const desArr = [
 function ContentTypes() {
   return (
     <>
-      <div className="content_type_section">
-        <Hero isCenter={true} {...welcomeData} />
-        <Hero {...blogData} />
-        <Hero {...pageCopyData} />
-        <Hero {...emailCopiesData} />
-        <Hero {...ebooksData} />
-        <Hero {...socailMediaData} />
-        <Hero {...promoData} />
-        <Hero
-          subHeadline={false}
-          headline="For Content Creators"
-          isCenter={true}
-          description="Are you a content writer, designer, or Videomaker? We work with top content creators across several categories. 
+      <Hero isCenter={true} {...welcomeData} />
+      <Hero {...blogData} />
+      <Hero {...pageCopyData} />
+      <Hero {...emailCopiesData} />
+      <Hero {...ebooksData} />
+      <Hero {...socailMediaData} />
+      <Hero {...promoData} />
+      <Hero
+        subHeadline={false}
+        headline="For Content Creators"
+        isCenter={true}
+        description="Are you a content writer, designer, or Videomaker? We work with top content creators across several categories. 
                       Grow your career by joining our talented team of content experts. "
-          buttonLabel={["Apply Here"]}
-          showButton={true}
-        />
-        <GuaranteHero
-          descArr={desArr}
-          headline="How does it work for Content creators?"
-        />
-        <Hero
-          headline="Ready to get started?"
-          subHeadline={false}
-          showButton={true}
-          buttonLabel={["Apply Here"]}
-          isCenter={true}
-        />
-      </div>
+        buttonLabel={["Apply Here"]}
+        showButton={true}
+      />
+      <GuaranteHero
+        descArr={desArr}
+        headline="How does it work for Content creators?"
+      />
+      <Hero
+        headline="Ready to get started?"
+        subHeadline={false}
+        showButton={true}
+        buttonLabel={["Apply Here"]}
+        isCenter={true}
+      />
     </>
   );
 }

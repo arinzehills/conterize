@@ -28,12 +28,14 @@ function Hero({
           className={`hero__container
                    ${
                      isCenter === true
-                       ? "hero__column"
+                       ? "hero__column" //for center
                        : imgStart === "start"
                        ? window.innerWidth <= 960
-                         ? "hero__column"
-                         : "hero__row " //for start
-                       : "hero__row reverse" //if is not for start
+                         ? "hero__column" //if is image start and is small screen give column glass
+                         : "hero__row " //for start, let is just be row class
+                       : window.innerWidth <= 960 //else if is not image start check the size
+                       ? "hero__column" //if is small screen give column class
+                       : "hero__row reverse" //give it a class
                    }
             `}
           // style={{

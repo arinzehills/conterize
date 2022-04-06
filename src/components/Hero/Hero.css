@@ -84,6 +84,8 @@
   .hero__subtitle {
     width: 90%;
   }
+  .hero__row {
+  }
 }
 @media screen and (min-width: 499px) and (max-width: 768px) {
   .hero__headline h1 {
