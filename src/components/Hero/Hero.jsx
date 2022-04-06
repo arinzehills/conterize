@@ -31,7 +31,7 @@ function Hero({
                        ? "hero__column"
                        : imgStart === "start"
                        ? window.innerWidth <= 960
-                         ? "hero__row row"
+                         ? "hero__column"
                          : "hero__row " //for start
                        : "hero__row reverse" //if is not for start
                    }
