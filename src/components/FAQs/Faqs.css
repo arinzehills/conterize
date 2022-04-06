@@ -116,11 +116,12 @@
   }
   .faq_section {
     /* margin: 0 28rem 0; */
+    padding: 2rem 0.5rem;
   }
   .faq_container {
     width: 105%;
     max-height: 150px;
-    margin: 0.9rem 0;
+    margin: 0.5rem 0rem;
   }
   .faq_container.active {
     max-height: 750px;
