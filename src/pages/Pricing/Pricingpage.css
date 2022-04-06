@@ -72,13 +72,20 @@
     align-content: center;
   }
   .prx_cnt_col {
-    padding-left: 2.5rem;
-    justify-content: center;
+    padding-left: 0rem;
+    display: flex;
+    align-items: center;
   }
   .prx_cnt_col h2 {
     font-size: 20px;
     text-align: center;
     margin-left: 0;
+  }
+  .prx_ctn_btn_wrp {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
   .cnt_img {
     max-width: 27rem;

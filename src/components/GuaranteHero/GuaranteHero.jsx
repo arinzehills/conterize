@@ -16,7 +16,7 @@ function GuaranteHero({ headline, descArr }) {
               color: "var(--dark-blue)",
             }}
           >
-            {headline ?? header}
+            {/* {headline ?? header} */}
           </h2>
           <hr></hr>
           <div className="guarantee_column">
