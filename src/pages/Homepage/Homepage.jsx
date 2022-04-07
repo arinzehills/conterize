@@ -20,6 +20,7 @@ function Homepage() {
       " social media graphics and more at scale every month.",
     showButton: true,
     show2Button: false,
+    buttonLinks: ["register", "contact"],
     buttonLabel: ["Sign up"],
     img: "../../images/studio.png",
     // imgStart: "start",
@@ -34,7 +35,8 @@ function Homepage() {
       "Get the right content your business needs to drive traffic, build trust, grow and scale.",
     imgStart: "start",
     img: "../../images/studio2.svg",
-    isCenter: window.innerWidth <= 960 && true,
+    isCenter: window.innerWidth <= 960 && true, //though this is handle at
+    // the hero container but is not working as expeted
     showImg: true,
   };
   const data = [
@@ -89,6 +91,7 @@ function Homepage() {
         showButton={true}
         show2Button={true}
         buttonLabel={["GET STARTED", "SPEAK TO US"]}
+        buttonLinks={["register", "contact"]}
       />
       <FAQs />
       {/* <Footer /> */}

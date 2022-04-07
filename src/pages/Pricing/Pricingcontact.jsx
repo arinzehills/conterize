@@ -1,5 +1,6 @@
 import React from "react";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import { Button } from "../../components/Button/Button";
 import "./Pricingpage.css";
 
@@ -26,13 +27,17 @@ function Pricingcontact({ heading }) {
                 {heading ?? "Need a Custom Plan?"}
               </h2>
               <div className="prx_ctn_btn_wrp">
-                <Button buttonSize="btn--large" buttonColor="red">
-                  Speak to us
-                </Button>
-                {heading != null && (
-                  <Button buttonSize="btn--large" buttonStyle="btn--outline">
-                    Speak to us
+                <Link to="/register">
+                  <Button buttonSize="btn--large" buttonColor="red">
+                    Get Started
                   </Button>
+                </Link>
+                {heading != null && (
+                  <Link to="/contact">
+                    <Button buttonSize="btn--large" buttonStyle="btn--outline">
+                      Speak to us
+                    </Button>
+                  </Link>
                 )}
               </div>
             </div>

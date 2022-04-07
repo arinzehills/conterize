@@ -13,6 +13,7 @@ const welcomeData = {
   img: "../../images/studio3.svg",
   //   imgStart: "start",
   isCenter: true,
+  buttonLinks: ["register", "contact"],
   showImg: true,
   //   smallImage: "images/twocircle.png",
 };
@@ -29,6 +30,7 @@ const blogData = {
   showImg: true,
   showButton: true,
   buttonLabel: ["Get Started"],
+  buttonLinks: ["register", "contact"],
   isCenter: window.innerWidth <= 960 && true,
 };
 const pageCopyData = {
@@ -43,6 +45,7 @@ const pageCopyData = {
   showImg: true,
   showButton: true,
   isCenter: window.innerWidth <= 960 && true,
+  buttonLinks: ["register", "contact"],
   buttonLabel: ["Get Started"],
 };
 const emailCopiesData = {
@@ -59,6 +62,7 @@ const emailCopiesData = {
   showImg: true,
   showButton: true,
   isCenter: window.innerWidth <= 960 && true,
+  buttonLinks: ["register", "contact"],
   buttonLabel: ["Get Started"],
 };
 const ebooksData = {
@@ -72,6 +76,7 @@ const ebooksData = {
   showImg: true,
   showButton: true,
   isCenter: window.innerWidth <= 960 && true,
+  buttonLinks: ["register", "contact"],
   buttonLabel: ["Get Started"],
 };
 const socailMediaData = {
@@ -85,6 +90,7 @@ const socailMediaData = {
   showImg: true,
   showButton: true,
   isCenter: window.innerWidth <= 960 && true,
+  buttonLinks: ["register", "contact"],
   buttonLabel: ["Get Started"],
 };
 const promoData = {
@@ -100,17 +106,10 @@ const promoData = {
   showImg: true,
   showButton: true,
   isCenter: window.innerWidth <= 960 && true,
+  buttonLinks: ["register", "contact"],
   buttonLabel: ["Get Started"],
 };
-const desArr = [
-  "You apply and undergo our test where we test your capabilities in your chosen category.",
-  "If you scale through our rigorous test process, we will start matching you with client" +
-    " requests. Only the top 5% of content creators get accepted.",
-  " You chose your working hours and work from anywhere you want as a freelancer on Conterize. ",
-  " As we are a monthly subscription service, you are likely to be creating content for the same set of " +
-    "clients we match you with. This will save you time and resources on always starting from scratch to" +
-    "learn about a new business every single time.",
-];
+
 function ContentTypes() {
   return (
     <>
@@ -121,26 +120,6 @@ function ContentTypes() {
       <Hero {...ebooksData} />
       <Hero {...socailMediaData} />
       <Hero {...promoData} />
-      <Hero
-        subHeadline={false}
-        headline="For Content Creators"
-        isCenter={true}
-        description="Are you a content writer, designer, or Videomaker? We work with top content creators across several categories. 
-                      Grow your career by joining our talented team of content experts. "
-        buttonLabel={["Apply Here"]}
-        showButton={true}
-      />
-      <GuaranteHero
-        descArr={desArr}
-        headline="How does it work for Content creators?"
-      />
-      <Hero
-        headline="Ready to get started?"
-        subHeadline={false}
-        showButton={true}
-        buttonLabel={["Apply Here"]}
-        isCenter={true}
-      />
     </>
   );
 }

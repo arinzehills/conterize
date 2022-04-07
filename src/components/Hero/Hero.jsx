@@ -14,6 +14,7 @@ function Hero({
   showButton,
   show2Button,
   buttonLabel,
+  buttonLinks,
 }) {
   return (
     <>
@@ -58,14 +59,14 @@ function Hero({
               {description}
             </p>
             {showButton === true && (
-              <Link to="/register">
+              <Link to={buttonLinks[0] ?? "/register"}>
                 <Button buttonColor="red" buttonSize="btn--large">
                   {buttonLabel[0]}
                 </Button>{" "}
               </Link>
             )}
             {show2Button === true && (
-              <Link to="/register">
+              <Link to={"/" + buttonLinks[1] ?? "/register"}>
                 <Button buttonSize="btn--large" buttonStyle="btn--outline">
                   {buttonLabel[1]}
                 </Button>

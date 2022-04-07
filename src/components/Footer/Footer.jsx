@@ -47,36 +47,33 @@ function Footer() {
             <div className="footer-link-wrapper">
               <div className="footer-link-items">
                 <h2>About Us</h2>
-                <Link to="/sign-up">How it works</Link>
+                <Link to="/">How it works</Link>
                 <Link to="/">Testimonials</Link>
-                {/*<Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link> */}
                 <Link to="/">Terms of Service</Link>
               </div>
               <div className="footer-link-items">
                 <h2>Contact Us</h2>
-                <Link to="/">Contact</Link>
-                <Link to="/">Support</Link>
-                <Link to="/">Forums</Link>
-                <Link to="/">Complaints</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/contact">Support</Link>
+                <Link to="/contact">Complaints</Link>
               </div>
             </div>
             <div className="footer-link-wrapper">
               <div className="footer-link-items">
-                <h2>More</h2>
-                <Link to="/">Suggest to us</Link>
-                <Link to="/">Contribute</Link>
-                {/* <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link> */}
+                <h2>Pages</h2>
+                <Link to="/">Home</Link>
+                <Link to="/pricing">Pricing</Link>
+                <Link to="/contenttypes">Content types</Link>
+                <Link to="/contentcreators">Content creators</Link>
               </div>
+              '{" "}
               <div className="footer-link-items">
-                <h2>Social Media</h2>
-                <Link to="/">Instagram</Link>
-                <Link to="/">Facebook</Link>
-                <Link to="/">Youtube</Link>
-                <Link to="/">Twitter</Link>
+                <h2>More</h2>
+                <Link to="/contact">Contact us</Link>
+                <Link to="/about">About</Link>
+                {/* <Link to="/">Contribute</Link> */}
               </div>
+              '
             </div>
           </div>
           <section className="social-media">

@@ -13,6 +13,7 @@ import ContentTypes from "./pages/ContentTypes/ContentTypes";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Contact from "./pages/Contact/Contact";
+import ContentCreators from "./pages/ContentCreators/ContentCreators";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/pricing" exact element={<Pricingpage />} />
           <Route path="/contenttypes" exact element={<ContentTypes />} />
           <Route path="/contact" exact element={<Contact />} />
+          <Route path="/contentcreators" exact element={<ContentCreators />} />
         </Route>
         <Route path="/login" exact element={<Login />} />
         <Route path="/register" exact element={<Register />} />
