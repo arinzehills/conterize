@@ -14,7 +14,7 @@ function Footer() {
   return (
     <>
       <div className="footer_wrapper">
-        <FooterSvg />
+        {/* <FooterSvg /> */}
         <div className="footer-container">
           <section className="footer-subscription">
             <p className="footer-subscription-heading">

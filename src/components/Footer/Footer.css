@@ -2,12 +2,12 @@
   background: var(--dark-blue);
   min-height: 105vh;
   position: relative;
-  margin-top: 4em;
+  margin-top: 1em;
 }
 
 .footer-container {
   /* background: linear-gradient(var(--light-orange), var(--dark-orange)); */
-  padding: 15rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
