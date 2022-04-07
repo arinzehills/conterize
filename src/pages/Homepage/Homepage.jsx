@@ -71,12 +71,12 @@ function Homepage() {
     },
   ];
   const desArr = [
-    "• 100 percent unique Content",
-    "•	Only top 5%  content creators are accepted",
-    "•	Unlimited Revisions till you are satisfied",
-    "•	Customizable Monthly Plans at your Request",
-    "•	Change Monthly Subscription or Cancel Anytime",
-    "•	100% money back Guarantee. No long story",
+    "100 percent unique Content",
+    "Only top 5%  content creators are accepted",
+    "Unlimited Revisions till you are satisfied",
+    "Customizable Monthly Plans at your Request",
+    "Change Monthly Subscription or Cancel Anytime",
+    "100% money back Guarantee. No long story",
   ];
   return (
     <div className="Homepage">
